@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Beauty Shop</title>
+    <style>
+
+
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#section1:hover
+             {
+                padding: 15px 25px 15px ;
+                
+                background-color:white;
+
+            }
+
+#section img{
+    display: flex;
+    align-items: center;
+}
+
+
+#header
+             {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2px solid rgb(82, 163, 38);
+                padding-bottom: 10px;
+                padding-top: 10px;
+                cursor: pointer;
+             }
+             .logo span, #slogan span{
+                color: rgb(82, 163, 38);
+             }
+             .logo h3{
+                font-size: 30px;
+                margin-left: 20px;
+                margin-top: 10px;
+                color: rgba(20, 17, 17, 0.822);
+             }
+             #navlinks ul 
+             {
+                display: flex;
+                align-items: center;
+             }
+             #navlinks ul li 
+             {
+                padding-left: 30px;
+                list-style-type: none;
+                display: inline-block;
+                padding: 10px;
+                margin-right: 20px;
+                border-radius: 40px;
+                color: rgb(82, 163, 38);
+             }
+             #navlinks #home 
+             {
+                border: none;
+                background-color:rgb(82, 163, 38);
+                color: white;
+                border-radius: 15px;
+                padding: 5px 10px 5px;
+                transition: 0.5s ease;
+             }
+             #navlinks #home:hover{
+                border:1px solid rgb(82, 163, 38);
+                border-radius: 15px;
+                background-color: white;
+                padding: 5px 10px 5px ;
+                color: rgb(82, 163, 38);
+             }
+             #navlinks .nav-hover
+             {
+                transition:0.5s ease;
+
+             }
+             #navlinks .nav-hover:hover
+             {
+                border-radius: 20px;
+                background-color:rgb(82, 163, 38) ;
+                padding: 5px 10px 5px;
+                color:white;
+
+             }
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    box-shadow: rgb(82, 163, 38);
+   
+}
+
+.product{
+    padding: 10px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    
+
+}
+.product:hover{
+        background-color: rgb(240, 240, 231);
+        width: 95%;
+        
+    }
+
+.price {
+    color: rgb(82, 163, 38);
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color:rgb(240, 240, 231);
+    color: rgb(82, 163, 38);
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}   
+
+
+
+
+
+#footer
+             {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 50px;
+                text-align: center;
+                line-height: 30px;
+                color: rgba(20, 17, 17, 0.822);
+                background-color: rgb(255, 255, 236);
+             }
+             #footer h1 span{
+                color: rgb(82, 163, 38);
+             }
+             #footer h1{
+                font-size: 40px;
+             }
+             #footer h2{
+                margin-bottom: 15px;
+             }
+             #footer ul{
+                list-style-type: none;
+                cursor: pointer;
+                font-size: large;
+             }
+             #social ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+             }
+             #footer ul li:hover{
+                color: rgb(82, 163, 38);
+             }
+             .fa-brands fa-youtube,.fa-brands fa-facebook,.fa-brands fa-instagram,.fa-brands fa-twitter{
+                color: lightgray;
+                background-color: black;
+                padding: 10px;
+
+             }
+             .fa-brands fa-youtube:hover,.fa-brands fa-facebook:hover,.fa-brands fa-instagram:hover,.fa-brands fa-twitter:hover{
+                color: lightgray;
+                background-color: black;
+
+             }
+             #copyright {
+                background-color: lightgray;
+                font-size: large;
+                text-align: center;
+                padding: 30px;
+                color: rgba(20, 17, 17, 0.822);
+
+             }
+
+
+             img{
+                height: 200px;
+                width: 230px;
+             }
+    </style>
+</head>
+<body>
+
+
+
+    <div id="header">
+        <div class="logo">
+            <h3><span>Beauty</span> Shop</h3>
+        </div>
+        <div id="navlinks">
+            <ul>
+                <li id="home">Home</li>
+                <li class="nav-hover">Services</li>
+                <li class="nav-hover">Trending</li>
+                <li class="nav-hover">Reviews</li>
+                <li class="nav-hover">Contact</li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+<div id="section1">
+    <img height="300px" src="model.webp">
+</div>
+
+
+    <main>
+        <section class="products">
+           
+            <div class="product">
+                <img src="./im1.avif" alt="Product 1">
+                <h3>Crème hydratante</h3>
+                <p>Hydratez votre peau avec notre crème premium.</p>
+                <p class="price">$100.99</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im2.jpg" alt="Product 2">
+                <h3>Crème hydratante</h3>
+                <p>Soin Apaisant Post-Soleil.</p>
+                <p class="price">$99.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im3.jpg" alt="Product 3">
+                <h3>Crème hydratante</h3>
+                <p>Hydratation Inégalée pour les Mains.</p>
+                <p class="price">$108.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im4.webp" alt="Product 4">
+                <h3>Crème hydratante</h3>
+                <p>Adaptée à tous les types de peau .</p>
+                <p class="price">$120.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im5.jpeg" alt="Product 5">
+                <h3>Crème hydratante</h3>
+                <p>Fragrance subtile et raffinée.</p>
+                <p class="price">$200.50</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im7.webp" alt="Product 6">
+                <h3>Crème hydratante</h3>
+                <p>Luxure Naturelle pour Votre Peau .</p>
+                <p class="price">$80.99</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im6.jpg" alt="Product 7">
+                <h3>Crème hydratante</h3>
+                <p>Équilibre Matifiant.</p>
+                <p class="price">$100.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im8.jpg" alt="Product 8">
+                <h3>Crème hydratante</h3>
+                <p>Hydratez votre peau avec notre crème premium.</p>
+                <p class="price">$300.99</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im9.jpg" alt="Product 9">
+                <h3>Crème hydratante</h3>
+                <p>Fusion de Fraîcheur.</p>
+                <p class="price">$299.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im10.jpg" alt="Product 10">
+                <h3>Crème hydratante</h3>
+                <p>Texture soyeuse et absorption rapide.</p>
+                <p class="price">$270.50</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im11.webp " alt="Product 11">
+                <h3>Crème hydratante</h3>
+                <p>Innovation Anti-Âge.</p>
+                <p class="price">$200.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im12.jpeg" alt="Product 12">
+                <h3>Crème hydratante</h3>
+                <p>Complexe Antioxydant Intégral.</p>
+                <p class="price">$299.99</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im13.webp" alt="Product 13">
+                <h3>Crème hydratante</h3>
+                <p>Harmonie Sensorielle.</p>
+                <p class="price">$199.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im14.jpg" alt="Product 14">
+                <h3>Crème hydratante</h3>
+                <p>Révélateur de Jeunesse.</p>
+                <p class="price">$350.50</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im15.jpeg" alt="Product 15">
+                <h3>Crème hydratante</h3>
+                <p>Sérénité Nocturne.</p>
+                <p class="price">$80.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im16.jpg" alt="Product 16">
+                <h3>Crème hydratante</h3>
+                <p>Protection Quotidienne .</p>
+                <p class="price">$95.50</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./17.jpg " alt="Product 17">
+                <h3>Crème hydratante</h3>
+                <p>Ingrédients d'exception.</p>
+                <p class="price">$100.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im18.webp" alt="Product 18">
+                <h3>Crème hydratante</h3>
+                <p>Hydratation longue durée.</p>
+                <p class="price">$50.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im19.webp" alt="Product 19">
+                <h3>Crème hydratante</h3>
+                <p>Hydratation Active 24h.</p>
+                <p class="price">$150.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./im20.jpg" alt="Product 20">
+                <h3>Crème hydratante</h3>
+                <p>Rituel de Luxe Anti-Pollution.</p>
+                <p class="price">$230.00</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+
+
+
+           
+            
+        </section>
+    </main>
+
+
+
+
+    
+    <div id="footer">
+        <div class="logo">
+            <h1><span>Beauty</span> Shop</h1>
+        </div>
+        <div class="list">
+            <h2>Services</h2>
+            <ul>
+                <li>Blog</li>
+                <li>Contact</li>
+                <li>Affiliate</li>
+                <li>Work</li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <h2>Pages</h2>
+            <ul>
+                <li>About</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+                <li>Disclaimer</li>
+            </ul>
+
+        </div>
+        <div class="list" id="social">
+            <h2>Follow</h2>
+            <ul>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+
+            </ul>
+        </div>
+    </div>
+    <hr>
+     
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Beauty Shop</p>
+    </footer> 
+
+
+</body>
+</html>
+
